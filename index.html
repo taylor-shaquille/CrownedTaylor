@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crowned Taylor</title>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="crownedtaylor, taylor, crowned, crowned taylor">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Goudy+Bookletter+1911|Niconne|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    
+    h1 {
+        font-family: 'Great Vibes', cursive;
+    }
+    
+    h2 {
+        font-family: 'Cinzel Decorative', cursive;
+    }
+    
+    h3 {
+        font-family: 'Prata', serif;
+    }
+    
+    p {
+        font-family: 'Goudy Bookletter 1911', serif;
+        font-size: 18px;
+    }
+    
+     /*Create a parallax effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+/*        background-attachment: fixed;*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* First image */
+    .bgimg-1 {
+        background-image: url(css/queen.css.jpeg);
+        min-height: 100%;
+    }
+    
+    /* Second Image */
+    .bgimg-2 {
+        background-image: url(css/weddingdress.css.jpg);
+        min-height: 400px;
+    }
+    
+    /* Third Image */
+    .bgimg-3 {
+        background-image: url(css/shoesandbouquet.css.jpeg);
+        min-height: 400px;
+    }
+    
+    /* Fourth Image */
+    .bgimg-4 {
+        background-image: url(css/groom.css.jpeg);
+        min-height: 400px;
+    }
+    
+    /* Fifth Image */
+    .bgimg-5 {
+        background-image: url(css/rings.css.jpeg);
+        min-height: 400px;
+    }
+    
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1. .bgimg-2, .bgimg-3, .bgimg-4 {
+            background-attachment: scroll;
+        }
+    }
+    
+    /* Link Styles */
+    
+    a:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    
+.iframe {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+    
+<body>
+  <!-- Navbar (sit on top) -->   
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> OUR STORY</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PHOTOS</a>
+    <a href="#weddingparty" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-group"></i> WEDDING PARTY</a>  
+    <a href="#information" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info-circle"></i> INFORMATION</a>
+    <a href="#rsvp" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar-check-o"></i> RSVP</a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR STORY</a>
+    <a href="#photos" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOS</a>
+    <a href="#weddingparty" class="w3-bar-item w3-button" onclick="toggleFunction()">WEDDING PARTY</a>  
+    <a href="#information" class="w3-bar-item w3-button" onclick="toggleFunction()">INFORMATION</a>
+    <a href="#rsvp" class="w3-bar-item w3-button" onclick="toggleFunction()">RSVP</a>
+  </div>
+</div>
+
+
+    <!-- First Parallax image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap;">
+        <h1 class="w3-jumbo w3-text-grey" style="text-align: center"><strong>Shaquille Smith<br> &<br> Michael Taylor</strong></h1>
+        <h2 class="w3-text-grey"style="text-align: center"><b>04.06.2019</b></h2>
+        <br>
+    </div>
+    </div>
+    <!-- Container (About Us section) -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="aboutus">
+    <div class="w3-content">
+        <h2 class="w3-center w3-text-grey"><b>Welcome to our Wedding Website</b></h2>
+        
+        <p class="w3-center w3-text-black">We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding. You can read more about our love story, get to know our awesome bridal party, and RSVP. Thank you for your ongoing love and support. We are so excited to share this day with you and look forward to celebrating Life and Love with all of our favorite people!</p><br>
+        
+        <img class="w3-round w3-center" src="images/engagement.JPG" style="width: 90%; margin: 32px 0 w3-center"><br>
+        <br><p class="w3-center w3-text-black">When we met in January 2017 we never would have imagined we would be where we are today. Me from New Orleans and him from Mobile. Me in the Navy and him in the Army. Finding each other at the Post Office was nothing short of a blessing. Shaquille's perspective: Michael was watching me for awhile until he got up the courage to ask for my number. Our relationship journey went from not talking for 2 weeks to driving 40 minutes everyday to see each other. He proposed privately in our apartment one night after dinner. His hands were shaking and I could tell he was nervous. He didn't have to be because I couldn't wait to say yes and spend the rest of my life with him. Michael's perspective: We locked eyes and Shaquille gave me a look that let me know she wanted me to walk up to her and ask for her number. Then one night I was at the movies alone and receieved a text from her that would begin to plant the seed for our future. We became inseparable. A week before my birthday I proposed to her and got the emotional response I wanted. Now I can't wait until the day I call her my wife. Fate has brought us to this very moment. </p><br>
+        <p class="w3-center"><a href="#information" class="w3-button w3-red w3-round w3-padding-large w3-large">Wedding Details</a></p> 
+    </div>
+</div>
+    
+
+    
+    <!-- Second Parallax Image with Photos Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+</div>
+    
+    <!-- Container (Photo Section) -->
+<div class="w3-container w3-padding-64 w3-pale-red" id="photos">
+    <h2 class="w3-center w3-text-grey" style="font-weight: bold">PHOTOS</h2>
+    <p class="w3-center"><em>Here are some of our pictures taken during our engagement photo shoot. Click on the images to make them bigger</em></p><br>
+    
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="images/photo9.JPG" style="width: 100%; height: 100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        
+        <div class="w3-col m3">
+            <img src="images/photo8.JPG" style="width: 100%; height: 100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        
+        <div class="w3-col m3">
+            <img src="images/photo6.JPG" style="width: 100%; height: 100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        
+        <div class="w3-col m3">
+            <img src="images/photo3.JPG" style="width: 100%; height: 100%" onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+    </div>
+</div>
+    
+    <!-- Modal for full size images on click -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+    
+    <!-- Third Parallax Image -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+</div>
+    
+<!-- Container (Wedding Party Section) -->
+<div class="w3-container w3-padding-64 w3-pale-red" id="weddingparty">
+    <h2 class="w3-center w3-text-grey" style="font-weight: bold">WEDDING PARTY</h2>
+    <p class="w3-center"><em>Our family and friends who has agreed to stand with us on our special day.</em></p><br>
+
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/cheryl.jpg" alt="Cheryl" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Cheryl: Mother of the Bride</p>
+    </div>
+
+    <div class="w3-col m3">
+    <img src="photoshop/paula.jpg" alt="Paula" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Paula: Mother of the Groom</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/braxton.jpg" alt="Braxton" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Braxton: Father of the Bride</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/johnny.jpg" alt="Johnny" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p> Johnny: Father of the Bride</p>
+    </div>
+</div>  
+    
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/aeishia.jpg" alt="Aeishia" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Aeishia: Matron of Honor</p>
+    </div>
+
+    <div class="w3-col m3">
+    <img src="photoshop/rakita.jpg" alt="Rakita" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Rakita: Maid of Honor</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/tayler.jpg" alt="Tayler" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Tayler: Bridesmaid</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/alyssa.jpg" alt="Alyssa" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Alyssa: Bridesmaid</p>
+    </div>
+</div>
+    
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/rhonda.jpg" alt="Rhonda" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Rhonda: Bridesmaid</p>
+    </div>
+
+    <div class="w3-col m3">
+    <img src="photoshop/jasmine.jpg" alt="Jasmine" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Jasmine: Bridesmaid</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/kendra.jpg" alt="Kendra" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Kendra: Honorary Matron of Honor</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/makayla.jpg" alt="Makayla" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Makayla: Junior Bridesmaid</p>
+    </div>
+</div>   
+    
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/abigail.jpg" alt="Abigail" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Abigail: Flower Girl</p>
+    </div>
+
+    <div class="w3-col m3">
+    <img src="photoshop/madison.jpg" alt="Madison" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Madison: Flower Girl</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/enrique.jpg" alt="Enrique" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Enrique: Best Man</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/seansr.jpg" alt="Sean" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Sean: Groomsmen</p>
+    </div>
+</div>       
+    
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/marc.jpg" alt="Marc" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Marc: Groomsmen</p>
+    </div>
+
+    <div class="w3-col m3">
+    <img src="photoshop/liljohn.jpg" alt="John Jr" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>John Jr: Groomsmen</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/seanjr.jpg" alt="Sean Jr" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Sean Jr: Junior Groomsmen</p>
+    </div>
+    
+    <div class="w3-col m3">
+    <img src="photoshop/kaleb.jpg" alt="Kaleb" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Kaleb: Junior Groomsmen</p>
+    </div>
+</div>           
+    
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+    <img src="photoshop/lee.jpg" alt="John Jr" style="width: 75%; height: 75%" class="w3-hover-opacity">
+            <p>Lee Jr: Ring Bearer</p>
+    </div>
+    
+</div>             
+    
+    </div>
+
+    <!-- Fourth Parallax Image -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+</div>    
+    
+   <!-- Container (Information Section) -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center" id="information">
+    <div class="w3-content">
+        <h2 class="w3-text-grey"><b>THE WEDDING</b></h2>
+        <img class="w3-round-large w3-grayscale-min" src="images/marriott.jpg" style="width: 100%; margin: 64px 0">
+        <div class="w3-row">
+            <div class="w3-half">
+                <h3>When</h3>
+                <p>April 6, 2019</p>
+                <p>Ceremony - 7:00pm</p>
+            </div>
+            <div class="w3-half">
+                <h3>Where</h3>
+                <p>JW Marriott Hotel</p>
+                <p>614 Canal Street, New Orleans, La 70130</p>
+            </div><br>
+        </div>
+    <!-- Add Google Map -->
+           <div class="iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5648.359439524814!2d-90.07233553439376!3d29.95219821123103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a60ceb7b4c05%3A0x73168bdc0e68fbe0!2sJW+Marriott+New+Orleans!5e0!3m2!1sen!2sus!4v1542654154468" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+            
+            <br>
+            <h3 class="w3-center">Travel & Accommodations</h3>
+            <p>For our out of town guests, the preferred hotel is The JW Marriott at 614 Canal Street, (Driveway Entrance on 611 Common Street), New Orleans, Louisiana 70130. (888) 364 - 1200.  Please book by March 8, 2019. This is the most convenient option since this is where the ceremony and reception will be held, but it's not the only option. Please feel free to book your lodging needs that's most comfortable for you.</p>
+        <br>
+            <h3 class="w3-center">Group Website</h3>
+            <p>The Group Website has been created so our guests will be able to make, modify and cancel hotel reservations online, as well as take advantage of any room upgrades, amenities or other services offered by the hotel. <a href="https://book.passkey.com/e/49706146" target="_blank" style="color: darkgreen; background-color: transparent; text-decoration: underline;">Click here to Visit Our Group Website</a></p>
+        </div>
+   
+</div>
+
+    <!-- Fifth Parallax Image -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    </div>
+</div>  
+   
+    <!-- Container RSVP Section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="rsvp">
+    <h2 class="w3-center w3-text-grey" style="font-weight: bold">WE HOPE YOU CAN MAKE IT</h2>
+    <p class="w3-large" style="font-size: 20px;">Kindly Respond By March 8, 2019</p>
+    <p>RSVPs are Important to us. It's how we ensure you have a seat and dinner. It's also to ensure we don't exceed our venue guest limit. You can RSVP online right here on our wedding website by clicking the RSVP button below. We ask that you please don't RSVP via calling/texting us. We want you there, but we will understand if your circumstances prevent you from attending. If you don't respond by March 8th, we will assume you aren't coming and allot your space to someone else. Please Note: Per our guest limit at the venue, children that's not in the wedding will not be able to attend.</p>
+    <p class="w3-xlarge"><br>
+        <a href="http://smith-taylor.rsvpify.com" target="_blank">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding: 8px 60px">Click to RSVP</button></a>
+    </p><br>
+    
+    <h3 class="w3-center">Wedding Registry</h3>
+    <p>Your love and support is all we ask for on our special day. However, if you do wish to celebrate with a gift, we are registered at <a style="color: darkgreen; text-decoration: underline" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546859089">Bed Bath and Beyond</a>.
+</p>
+    
+</div>
+    
+    
+<!-- First/Last Parallax Image -->    
+<div class="bgimg-1 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-large w3-text-black w3-wide">#CROWNEDTAYLOR</span>  
+      </div>
+</div>    
+    
+    
+<script>
+    
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    
+//Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+    
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+</script>
+          
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding: 8px 20px"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+    <i class="fa fa-envelope-o  w3-hover-opacity"></i> Contact Aeishia: aeishia.smith84@gmail.com
+    </div>
+    <p>Icon made by Freepik from www.flaticon.com</p>
+    </footer>
+    
+    </body>    
+</html>
